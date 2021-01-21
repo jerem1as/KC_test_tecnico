@@ -1,0 +1,170 @@
+{
+	"info": {
+		"_postman_id": "d92e26e1-0b90-4173-bcc8-eb0a862c6ba0",
+		"name": "HubSpot requests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Pipeline completo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.hubapi.com/crm/v3/pipelines/deals?archived=false&hapikey=5adf730a-d272-470f-b6dc-29d96b510e0d",
+					"protocol": "https",
+					"host": [
+						"api",
+						"hubapi",
+						"com"
+					],
+					"path": [
+						"crm",
+						"v3",
+						"pipelines",
+						"deals"
+					],
+					"query": [
+						{
+							"key": "archived",
+							"value": "false"
+						},
+						{
+							"key": "hapikey",
+							"value": "5adf730a-d272-470f-b6dc-29d96b510e0d"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "propiedades empresa",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.hubapi.com/companies/v2/companies/paged?hapikey=5adf730a-d272-470f-b6dc-29d96b510e0d&properties=name&properties=website,qualifiedtobuy,hs_lead_status&limit=100",
+					"protocol": "https",
+					"host": [
+						"api",
+						"hubapi",
+						"com"
+					],
+					"path": [
+						"companies",
+						"v2",
+						"companies",
+						"paged"
+					],
+					"query": [
+						{
+							"key": "hapikey",
+							"value": "5adf730a-d272-470f-b6dc-29d96b510e0d"
+						},
+						{
+							"key": "properties",
+							"value": "name"
+						},
+						{
+							"key": "properties",
+							"value": "website,qualifiedtobuy,hs_lead_status"
+						},
+						{
+							"key": "limit",
+							"value": "100"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Todos los id de los deals",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.hubapi.com/properties/v1/deals/properties/?hapikey=5adf730a-d272-470f-b6dc-29d96b510e0d",
+					"protocol": "https",
+					"host": [
+						"api",
+						"hubapi",
+						"com"
+					],
+					"path": [
+						"properties",
+						"v1",
+						"deals",
+						"properties",
+						""
+					],
+					"query": [
+						{
+							"key": "hapikey",
+							"value": "5adf730a-d272-470f-b6dc-29d96b510e0d"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Owners",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.hubapi.com/owners/v2/owners?hapikey=5adf730a-d272-470f-b6dc-29d96b510e0d",
+					"protocol": "https",
+					"host": [
+						"api",
+						"hubapi",
+						"com"
+					],
+					"path": [
+						"owners",
+						"v2",
+						"owners"
+					],
+					"query": [
+						{
+							"key": "hapikey",
+							"value": "5adf730a-d272-470f-b6dc-29d96b510e0d"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Propiedades de un deal",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.hubapi.com/deals/v1/deal/3981001643?hapikey=5adf730a-d272-470f-b6dc-29d96b510e0d",
+					"protocol": "https",
+					"host": [
+						"api",
+						"hubapi",
+						"com"
+					],
+					"path": [
+						"deals",
+						"v1",
+						"deal",
+						"3981001643"
+					],
+					"query": [
+						{
+							"key": "hapikey",
+							"value": "5adf730a-d272-470f-b6dc-29d96b510e0d"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
